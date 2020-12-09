@@ -72,7 +72,7 @@ def getDarkChannel(img, blockSize):
     return imgDark
 
 
-img = cv2.imread(r'C:\Users\Owen\Pictures\Haze_Removal_test10.jpg')
+img = cv2.imread(r'C:\Users\Owen\Pictures\Haze_Removal_test3.jpg')
 
 N=15  #窗口大小，窗口大小=最小滤波半径*2 + 1
 Radius = 5
@@ -134,8 +134,8 @@ if atmosphericLightR > 220:
 dark_channel = np.float64(dark_channel)
 
 
-
-#用暗通道来求透射率t(x)的预估值：
+值
+#用暗通道来求透射率t(x)的预估：
 dark_channel = np.float64(dark_channel)
 transmission = 1 - W * dark_channel / max(atmosphericLightB,atmosphericLightG,atmosphericLightR)
 
